@@ -33,11 +33,11 @@ async def start_cmd(bot, message):
         [
             [InlineKeyboardButton("➕ ˹ᴀᴅᴅ ᴍє ɪη ʏσᴜʀ ɢʀσᴜᴘ˼", url=f"https://t.me/{me.username}?startgroup=true")],
             [
-                InlineKeyboardButton("˹❍ᴡηєʀ˼", url="https://t.me/yourusername"),
-                InlineKeyboardButton("˹ɢʀᴏᴜᴘ˼", url="https://t.me/yourgroup")
+                InlineKeyboardButton("˹❍ᴡηєʀ˼", url="https://t.me/CarelessxOwner"),
+                InlineKeyboardButton("˹ɢʀᴏᴜᴘ˼", url="https://t.me/CarelessxWorld")
             ],
             [
-                InlineKeyboardButton("˹sᴜᴘᴘσʀᴛ˼", url="https://t.me/yourchannel")
+                InlineKeyboardButton("˹sᴜᴘᴘσʀᴛ˼", url="https://t.me/ll_CarelessxCoder_ll")
             ],
             [
                 InlineKeyboardButton("˹ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅ˼", callback_data="help_menu")
