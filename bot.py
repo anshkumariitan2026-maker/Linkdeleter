@@ -31,16 +31,16 @@ async def start_cmd(bot, message):
 
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("➕ Add Me In A Group", url=f"https://t.me/{me.username}?startgroup=true")],
+            [InlineKeyboardButton("➕ ˹ᴀᴅᴅ ᴍє ɪη ʏσᴜʀ ɢʀσᴜᴘ˼", url=f"https://t.me/{me.username}?startgroup=true")],
             [
-                InlineKeyboardButton("👑 Owner", url="https://t.me/yourusername"),
-                InlineKeyboardButton("💬 Support Group", url="https://t.me/yourgroup")
+                InlineKeyboardButton("˹❍ᴡηєʀ˼", url="https://t.me/yourusername"),
+                InlineKeyboardButton("˹ɢʀᴏᴜᴘ˼", url="https://t.me/yourgroup")
             ],
             [
-                InlineKeyboardButton("📢 Support Channel", url="https://t.me/yourchannel")
+                InlineKeyboardButton("˹sᴜᴘᴘσʀᴛ˼", url="https://t.me/yourchannel")
             ],
             [
-                InlineKeyboardButton("📖 Help", callback_data="help_menu")
+                InlineKeyboardButton("˹ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅ˼", callback_data="help_menu")
             ]
         ]
     )
@@ -62,9 +62,9 @@ async def help_menu(bot, callback_query):
 
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("⚙ Uses", callback_data="uses_info")],
-            [InlineKeyboardButton("✨ Features", callback_data="features_info")],
-            [InlineKeyboardButton("⬅ Back", callback_data="back_start")]
+            [InlineKeyboardButton("˹⛲ ᴜsᴇs˼", callback_data="uses_info")],
+            [InlineKeyboardButton("✨ ˹Fᴇᴀᴛᴜʀᴇs˼", callback_data="features_info")],
+            [InlineKeyboardButton("˹🔙 ʙᴧᴄᴋ˼", callback_data="back_start")]
         ]
     )
 
