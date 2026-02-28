@@ -71,7 +71,7 @@ text = f"""
 **╚════════════════════╝**
 """
 
-await message.reply_text(text, reply_markup=buttons)
+await message.reply_text(text, reply_markup=buttons, parse_mode="markdown")
 # ---------------- HELP MENU ---------------- #
 
 @bughunter0.on_callback_query(filters.regex("help_menu"))
