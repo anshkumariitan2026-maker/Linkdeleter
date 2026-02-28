@@ -84,7 +84,7 @@ async def help_menu(bot, callback_query):
         [
             [InlineKeyboardButton("˹⛲ ᴜsᴇs˼", callback_data="uses_info")],
             [InlineKeyboardButton("✨ ˹Fᴇᴀᴛᴜʀᴇs˼", callback_data="features_info")],
-            [InlineKeyboardButton("˹🔙 ʙᴧᴄᴋ˼", callback_data="back_start")]
+            [InlineKeyboardButton("˹🔙 ˹ʙᴧᴄᴋ˼", callback_data="back_start")]
         ]
     )
 
@@ -98,24 +98,30 @@ async def help_menu(bot, callback_query):
 @bughunter0.on_callback_query(filters.regex("uses_info"))
 async def uses_info(bot, callback_query):
 
-    text = f"""
-⚙ How To Use Me?
+text = f"""
+**╔══════════════════╗**
+      **✦ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ ? ✦**
+**╚══════════════════╝**
+╭─ ❖ ─────────────── ❖ ─╮
+➤ ᴧᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ  
+➤ ᴍᴧᴋᴇ ᴍᴇ ᴧη ᴧᴅᴍɪη  
+╰─ ❖ ─────────────── ❖ ─╯
+━━━━━━━━━━━━━━━━━━
+**✦ ʀᴇǫᴜɪʀᴇᴅ ᴘᴇʀᴍɪꜱꜱɪᴏηꜱ ✦**
 
-1️⃣ Add Me To Your Group  
-2️⃣ Make Me Admin  
-
-🔑 Required Permissions:
-• Delete Messages  
-• Restrict Members  
-• Manage Chat Permissions  
-
-After Giving These Permissions,
-I Will Automatically Start Protecting Your Group 🔒
+• ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴧɢᴇꜱ  
+• ʀᴇꜱᴛʀɪᴄᴛ ᴍᴇᴍʙᴇʀꜱ  
+• ʙᴧη & ᴍᴜᴛᴇ ᴘᴇʀᴍɪꜱꜱɪᴏη  
+• ᴍᴧηᴧɢᴇ ᴄʜᴧᴛ ᴘᴇʀᴍɪꜱꜱɪᴏηꜱ  
+━━━━━━━━━━━━━━━━━━
+✦ ᴧꜰᴛᴇʀ ɢɪᴠɪηɢ ᴛʜᴇꜱᴇ ᴘᴇʀᴍɪꜱꜱɪᴏηꜱ  
+✦ ɪ ᴡɪʟʟ ᴧᴜᴛᴏᴍᴧᴛɪᴄᴧʟʟʏ ꜱᴛᴧʀᴛ  
+ᴘʀᴏᴛᴇᴄᴛɪηɢ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🛡
 """
 
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("⬅ Back", callback_data="help_menu")]
+            [InlineKeyboardButton("🔙 ˹ʙᴧᴄᴋ˼", callback_data="help_menu")]
         ]
     )
 
@@ -141,7 +147,7 @@ Your Group Will Stay Clean & Secure 🔒
 
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("⬅ Back", callback_data="help_menu")]
+            [InlineKeyboardButton("🔙 ˹ʙᴧᴄᴋ˼", callback_data="help_menu")]
         ]
     )
 
