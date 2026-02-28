@@ -31,7 +31,7 @@ async def start_cmd(bot, message):
 
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("➕ ˹ᴀᴅᴅ ᴍє ɪη ʏσᴜʀ ɢʀσᴜᴘ˼", url=f"https://t.me/{me.username}?startgroup=true")],
+            [InlineKeyboardButton("➕ ˹ᴀᴅᴅ ᴍє ɪη ʏσᴜʀ ɢʀσᴜᴘ˼", url=f"https://t.me/protection_ccbot?startgroup=true")],
             [
                 InlineKeyboardButton("˹❍ᴡηєʀ˼", url="https://t.me/CarelessxOwner"),
                 InlineKeyboardButton("˹ɢʀᴏᴜᴘ˼", url="https://t.me/CarelessxWorld")
