@@ -1,6 +1,7 @@
 import os
 import asyncio
 import time
+from dotenv import load_dotenv
 from pyrogram import Client, filters
 from pyrogram.types import (
     ChatPermissions,
@@ -8,14 +9,16 @@ from pyrogram.types import (
     InlineKeyboardButton
 )
 
+load_dotenv()
+
 warnings = {}
 spam_tracker = {}
 
 bughunter0 = Client(
-    "NoLink-BOT",
-    bot_token=os.environ["BOT_TOKEN"],
-    api_id=int(os.environ["API_ID"]),
-    api_hash=os.environ["API_HASH"]
+    "Linkdeleter",
+    bot_token=os.getenv("BOT_TOKEN"),
+    api_id=int(os.getenv("API_ID")),
+    api_hash=os.getenv("API_HASH")
 )
 
 link_filter = filters.regex(r"(http|www|t\.me)")
