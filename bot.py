@@ -46,16 +46,29 @@ async def start_cmd(bot, message):
     )
     
 text = f"""
-👋 Hello {message.from_user.mention}!
+**╔══━─━─━─━━━─━─━─━─══╗**
+        **✦ ᴡᴇʟᴄᴏᴍᴇ ✦**
+**╚══━─━─━─━━━─━─━─━─══╝**
 
-🔒 Welcome To My Advanced Protection Bot
+✧ ʜɪɪ ᴛʜᴇʀᴇ {message.from_user.mention} ✧ 
+✦ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴧᴅᴠᴧηᴄᴇᴅ ᴘʀᴏᴛᴇᴄᴛɪᴏη ʙᴏᴛ. 
 
-I Protect Groups From:
-• Links 🚫
-• Spam ⚡
-• Edited Messages ✏️
+**╔═━───━══════━───━═╗**
+  **ɪ ᴘʀᴏᴛᴇᴄᴛ ɢʀᴏᴜᴘꜱ ꜰʀᴏᴍ:**
+**╚═━───━══════━───━═╝**
 
-Click The Buttons Below To Setup 👇
+✧ • ᴇxᴛᴇʀηᴧʟ ʟɪηᴋꜱ 🚫
+✧ • ꜱᴘᴧᴍᴍɪηɢ ⚡
+✧ • ᴇᴅɪᴛᴇᴅ ᴍᴇꜱꜱᴧɢᴇꜱ ✏️
+
+**╭━━〔 ᴄᴏᴍᴍᴧηᴅ ᴘᴧηᴇʟ 〕━━━╮**
+ᴄʟɪᴄᴋ ᴛʜᴇ ʜᴇʟᴘ ᴧηᴅ ᴄᴏᴍᴍᴧηᴅ  
+ʙᴜᴛᴛᴏη ꜰᴏʀ ꜱᴇᴇ ᴛʜᴇɪʀ ꜰᴇᴧᴛᴜʀᴇꜱ ᴧηᴅ ᴜꜱᴇꜱ.
+**╰━━━━━〔 ✧ ✦ ✧ 〕━━━━━╯**
+
+**╔════════════════════╗**
+ ✦ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄᴧʀᴇʟᴇꜱꜱ ᴄᴏᴅᴇʀ ✦
+**╚════════════════════╝**
 """
 
 await message.reply_text(text, reply_markup=buttons)
