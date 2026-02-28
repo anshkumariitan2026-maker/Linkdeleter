@@ -132,17 +132,26 @@ text = f"""
 @bughunter0.on_callback_query(filters.regex("features_info"))
 async def features_info(bot, callback_query):
 
-    text = f"""
-✨ Bot Features
+text = f"""
+**╔══━══════════════━══╗**
+ **✦ ʙᴏᴛ ᴧᴅᴠᴧηᴄᴇ ꜰᴇᴧᴛᴜʀᴇꜱ ✦**
+**╚══━══════════════━══╝**
 
-🚫 All Links Blocked (Only Admin Allowed)  
-⚠ 3 Warnings → 5 Minutes Mute  
-🔓 Manual Unmute Button  
-❌ Remove Warn Button  
-✏ Edited Messages Auto Deleted  
-⚡ Advanced Anti-Spam Protection  
+╭─━ ✦ ᴘʀᴏᴛᴇᴄᴛɪᴏɴ ꜱʏꜱᴛᴇᴍ ✦ ━─╮
+➤ ᴧʟʟ ʟɪηᴋꜱ ʙʟᴏᴄᴋᴇᴅ  
+   (ᴏηʟʏ ᴧᴅᴍɪη ᴧʟʟᴏᴡᴇᴅ)
 
-Your Group Will Stay Clean & Secure 🔒
+➤ 3 ᴡᴧʀηɪηɢꜱ → 5 ᴍɪηᴜᴛᴇꜱ ᴍᴜᴛᴇ  
+➤ ᴍᴧηᴜᴧʟ ᴜηᴍᴜᴛᴇ ʙᴜᴛᴛᴏη  
+➤ ʀᴇᴍᴏᴠᴇ ᴡᴧʀη ʙᴜᴛᴛᴏη  
+➤ ᴇᴅɪᴛᴇᴅ ᴍᴇꜱꜱᴧɢᴇꜱ ᴧᴜᴛᴏ ᴅᴇʟᴇᴛᴇᴅ  
+➤ ᴧᴅᴠᴧηᴄᴇᴅ ᴧηᴛɪ-ꜱᴘᴧᴍ ᴘʀᴏᴛᴇᴄᴛɪᴏη  
+╰─━━━ ✦ ✧ ✦ ✧ ✦ ━━━─╯
+
+**╔════════════════════╗**
+ ✦ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪʟʟ ꜱᴛᴧʏ  
+      ᴄʟᴇᴧη & ꜱᴇᴄᴜʀᴇ 🛡 
+**╚════════════════════╝**
 """
 
     buttons = InlineKeyboardMarkup(
@@ -151,7 +160,7 @@ Your Group Will Stay Clean & Secure 🔒
         ]
     )
 
-    await callback_query.message.edit_text(text, reply_markup=buttons)
+    await callback_query.message.edit_text(text, reply_markup=buttons, parse_mode="markdown")
     
 # ---------------- BACK ---------------- #
 
