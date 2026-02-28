@@ -44,17 +44,21 @@ async def start_cmd(bot, message):
             ]
         ]
     )
+    
+text = f"""
+👋 Hello {message.from_user.mention}!
 
-    await message.reply_text(
-        f"👋 Hello {message.from_user.mention}!\n\n"
-        "🔒 I protect groups from:\n"
-        "• Links 🚫\n"
-        "• Spam ⚡\n"
-        "• Edited Messages ✏️\n\n"
-        "Click below to setup 👇",
-        reply_markup=buttons
-    )
+🔒 Welcome To My Advanced Protection Bot
 
+I Protect Groups From:
+• Links 🚫
+• Spam ⚡
+• Edited Messages ✏️
+
+Click The Buttons Below To Setup 👇
+"""
+
+await message.reply_text(text, reply_markup=buttons)
 # ---------------- HELP MENU ---------------- #
 
 @bughunter0.on_callback_query(filters.regex("help_menu"))
@@ -78,19 +82,25 @@ async def help_menu(bot, callback_query):
 @bughunter0.on_callback_query(filters.regex("uses_info"))
 async def uses_info(bot, callback_query):
 
-    text = (
-        "⚙ How To Use Me?\n\n"
-        "1️⃣ Add me to your group.\n"
-        "2️⃣ Make me Admin.\n\n"
-        "🔑 Required Permissions:\n"
-        "• Delete Messages\n"
-        "• Restrict Members\n"
-        "• Manage Chat Permissions\n\n"
-        "Then I will automatically protect your group."
-    )
+    text = f"""
+⚙ How To Use Me?
+
+1️⃣ Add Me To Your Group  
+2️⃣ Make Me Admin  
+
+🔑 Required Permissions:
+• Delete Messages  
+• Restrict Members  
+• Manage Chat Permissions  
+
+After Giving These Permissions,
+I Will Automatically Start Protecting Your Group 🔒
+"""
 
     buttons = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("⬅ Back", callback_data="help_menu")]]
+        [
+            [InlineKeyboardButton("⬅ Back", callback_data="help_menu")]
+        ]
     )
 
     await callback_query.message.edit_text(text, reply_markup=buttons)
@@ -100,22 +110,27 @@ async def uses_info(bot, callback_query):
 @bughunter0.on_callback_query(filters.regex("features_info"))
 async def features_info(bot, callback_query):
 
-    text = (
-        "✨ Features\n\n"
-        "🚫 All Links Blocked (Only Admin Allowed)\n"
-        "⚠ 3 Warnings → 5 Min Mute\n"
-        "🔓 Manual Unmute Button\n"
-        "❌ Remove Warn Button\n"
-        "✏ Edited Messages Deleted\n"
-        "⚡ Anti-Spam Protection\n"
-    )
+    text = f"""
+✨ Bot Features
+
+🚫 All Links Blocked (Only Admin Allowed)  
+⚠ 3 Warnings → 5 Minutes Mute  
+🔓 Manual Unmute Button  
+❌ Remove Warn Button  
+✏ Edited Messages Auto Deleted  
+⚡ Advanced Anti-Spam Protection  
+
+Your Group Will Stay Clean & Secure 🔒
+"""
 
     buttons = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("⬅ Back", callback_data="help_menu")]]
+        [
+            [InlineKeyboardButton("⬅ Back", callback_data="help_menu")]
+        ]
     )
 
     await callback_query.message.edit_text(text, reply_markup=buttons)
-
+    
 # ---------------- BACK ---------------- #
 
 @bughunter0.on_callback_query(filters.regex("back_start"))
@@ -147,6 +162,7 @@ async def message_handler(bot, message):
         spam_tracker[chat_id][user_id].append(now)
 
         spam_tracker[chat_id][user_id] = [
+     
             t for t in spam_tracker[chat_id][user_id]
             if now - t <= 5
         ]
